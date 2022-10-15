@@ -34,6 +34,7 @@ app.post("/push",async(req,res)=>{
 })
 
 app.post("/pull",async(req,res)=>{
+  console.log(req.body);
     try{
         const {request_id, author, from_branch, to_branch, createdAt} = req.body;
         console.log(req.body);
@@ -55,6 +56,7 @@ app.post("/pull",async(req,res)=>{
     try{
         const {request_id, author, from_branch, to_branch, createdAt} = req.body;
         console.log(req.body);
+     
         await gitAction.create({
             request_id,
             author,
