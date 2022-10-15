@@ -23,3 +23,7 @@ console.log("hrello")
 app.get("/",(req,res)=>{
     res.send("home")
 })
+
+app.post("/push",(req,res)=>{
+    res.status(200).json({massages:"send"})
+})
