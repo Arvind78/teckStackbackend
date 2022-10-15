@@ -18,3 +18,8 @@ console.log("Server is started");
 });
 
 console.log("hrello")
+
+
+app.get("/",(req,res)=>{
+    res.send("home")
+})
