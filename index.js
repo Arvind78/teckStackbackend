@@ -1,5 +1,5 @@
 const express =  require("express")
-const cor = require("cors")
+const dotenv =require('dotenv').config();
 const mongoose = require("mongoose")
 const gitAction = require("./gitActionSchema")
 const app = express();
@@ -10,7 +10,7 @@ const dataBaseUrl='mongodb+srv://789789789@cluster0.7cu4fig.mongodb.net/?retryWr
 
  
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
 console.log("Server is started");
 
 });
