@@ -24,6 +24,6 @@ app.get("/",(req,res)=>{
     res.send("home")
 })
 
-app.post("/push",(req,res)=>{
+app.post("/",(req,res)=>{
     res.status(200).json({massages:"send"})
 })
